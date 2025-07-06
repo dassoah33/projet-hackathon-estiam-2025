@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "EventCard",
+    "slug": "EventCard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NFCReaderUsageDescription": "Cette app utilise le NFC pour scanner les cartes EventCard"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.NFC"
+      ],
+      "package": "com.dassoah.EventCard"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-nfc-manager",
+        {
+          "nfcPermission": "Cette app utilise le NFC pour scanner les cartes EventCard"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6c55dac3-bd99-4023-8318-63dbf8589f8c"
+      }
+    }
+  }
+}
